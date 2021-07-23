@@ -15,4 +15,4 @@ target_include_directories(
   /usr/include/allegro5
 )
 
-target_link_libraries(${PROJECT_NAME} core allegro allegro_font)
+target_link_libraries(${PROJECT_NAME} core allegro allegro_font allegro_primitives allegro_image)

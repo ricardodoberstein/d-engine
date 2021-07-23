@@ -24,6 +24,7 @@ add_executable(
   ${PROJECT_NAME}
   gameobject_test.cpp
   vector2_test.cpp
+  scene_test.cpp
   ../core/vector2.cpp
   ../core/vector2.h
   ../core/gameobject.h
@@ -34,6 +35,10 @@ add_executable(
   ../core/component.cpp
   ../core/sprite.cpp
   ../core/sprite.h
+  ../core/scene.h
+  ../core/scene.cpp
+  ../core/asset_loader.cpp
+  ../core/asset_loader.h
 )
 
 target_link_libraries(
@@ -41,6 +46,7 @@ target_link_libraries(
   gtest_main
   allegro
   allegro_font
+  allegro_primitives
 )
 
 include(GoogleTest)

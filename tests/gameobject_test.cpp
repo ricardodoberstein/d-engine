@@ -25,3 +25,25 @@ TEST(GameObject, gameobject_add_sprite_component)
   go->add_component(sprite);
   ASSERT_EQ(go->get_component<Sprite>(), sprite);
 }
+
+TEST(GameObject, gameobject_get_components)
+{
+  GameObject *go = new GameObject();
+  Sprite *sprite1 = new Sprite();
+  Sprite *sprite2 = new Sprite();
+  go->add_component(sprite1);
+  go->add_component(sprite2);
+
+  std::vector<Sprite*> a = go->get_components<Sprite>();
+  EXPECT_EQ(a.size(), 2);
+  EXPECT_EQ(a[0], sprite1);
+  EXPECT_EQ(a[1], sprite2);
+
+  delete go;
+}
+
+TEST(GameObject, gameobject_constructor_with_name)
+{
+  GameObject *go = new GameObject("NewObject");
+  EXPECT_EQ(go->get_name(), "NewObject");
+}

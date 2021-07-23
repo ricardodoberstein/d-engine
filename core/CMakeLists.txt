@@ -10,4 +10,10 @@ add_library(
   sprite.h
   transform.cpp
   transform.h
+  d_engine.h
+  d_engine.cpp
+  asset_loader.cpp
+  asset_loader.h
+  scene.h
+  scene.cpp
 )

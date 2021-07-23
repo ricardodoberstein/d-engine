@@ -9,3 +9,13 @@ Component::~Component()
 {
   
 }
+
+void Component::render()
+{
+
+}
+
+void Component::start()
+{
+
+}
