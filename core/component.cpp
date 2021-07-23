@@ -10,12 +10,5 @@ Component::~Component()
   
 }
 
-void Component::render()
-{
-
-}
-
-void Component::start()
-{
-
-}
+void Component::start() {}
+void Component::render() {}

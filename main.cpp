@@ -1,4 +1,3 @@
-#include <iostream>
 #include "core/d_engine.h"
 #include "core/gameobject.h"
 #include "core/sprite.h"

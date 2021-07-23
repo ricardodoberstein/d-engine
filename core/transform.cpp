@@ -9,6 +9,3 @@ Transform::~Transform()
 {
 
 }
-
-void Transform::render() {}
-void Transform::start() {}

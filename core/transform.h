@@ -10,8 +10,6 @@ public:
   Transform();
   ~Transform();
 
-  void render() override;
-  void start() override;
   Vector2 *position;
 };
 

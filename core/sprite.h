@@ -14,7 +14,6 @@ public:
   ~Sprite();
 
   virtual void render();
-  virtual void start();
 
 private:
   ALLEGRO_BITMAP *bitmap;

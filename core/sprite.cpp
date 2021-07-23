@@ -11,7 +11,6 @@ Sprite::Sprite(char *asset_name)
 
 Sprite::~Sprite() {}
 
-void Sprite::start() {}
 void Sprite::render()
 {
   al_draw_bitmap(bitmap, 100, 100, 0);

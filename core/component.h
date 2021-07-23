@@ -7,8 +7,8 @@ public:
   Component();
   virtual ~Component();
 
-  virtual void start() = 0;
-  virtual void render() = 0;
+  virtual void start();
+  virtual void render();
 };
 
 #endif
