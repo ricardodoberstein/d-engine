@@ -1,0 +1,13 @@
+add_library(
+  core
+  vector2.h
+  vector2.cpp
+  component.h
+  component.cpp
+  gameobject.h
+  gameobject.cpp
+  sprite.cpp
+  sprite.h
+  transform.cpp
+  transform.h
+)
