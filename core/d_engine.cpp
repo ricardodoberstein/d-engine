@@ -63,8 +63,8 @@ void DEngine::run()
       std::vector<GameObject *> objects = this->scenes[0]->get_objects();
       for (int i = 0; i < objects.size(); i += 1)
       {
-        std::vector<Sprite *> components = objects[i]->get_components<Sprite>();
-        for (int j = 0; i < components.size(); i += 1)
+        std::vector<Component *> components = objects[i]->get_components<Component>();
+        for (int j = 0; j < components.size(); j += 1)
         {
           components[j]->render();
         }
